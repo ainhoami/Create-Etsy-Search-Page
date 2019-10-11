@@ -1,0 +1,146 @@
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+.body{
+    display: grid;
+    width: 1200px;
+    margin: auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+     "header header"
+     "aside section";
+
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+header{
+    grid-area: header;
+    height: auto;
+
+}
+aside{
+    grid-area: aside;
+    background-color: aqua;
+    height: 100px;
+}
+section{
+    grid-area: section;
+    background-color: brown;
+    height: 100px;
+}
+
+.infoline, form, .userline, .categories, .variety{
+    display:flex;
+    
+
+}
+.infoline{
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    height: 40px;
+}
+input.searchtext{
+width:260px;
+}
+
+input.searchtext::placeholder{
+    color: grey;
+    font-size: 16px;
+    text-align: center;
+}
+
+input.searchbutton{
+    width:100px;
+    background-color: black;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logoet img{
+width: 130px;
+}
+
+.userline{
+    /* justify-content: space-between; */
+    align-items: center;
+    list-style: none;
+    
+    
+}
+
+.userline li{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding:0 15px;
+   margin-left:8px;
+}
+
+.userline li:nth-child(3)
+{
+    border:1px solid black;
+    margin-right: 10px;
+}
+
+
+
+.icons i p{
+    padding: 5px 0 0 0;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.icons i{
+    font-size: 25px;
+}
+
+.userline li:nth-child(4){
+
+border-right: 1px solid #eee;
+border-left: 1px solid #eee;
+
+}
+
+.categories, .variety{
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    height: 40px;
+}
+
+hr{
+    background-color:#ccc;
+}
+.variety{
+justify-content:left;
+align-items: center;
+
+}
+.variety li{
+    margin-right:15px;
+    height: 40px;
+    line-height: 40px;
+    padding:0 8px;
+    background-color: orange;
+}
+/* header div{
+height: } */
+ 
