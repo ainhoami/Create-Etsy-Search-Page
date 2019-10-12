@@ -10,65 +10,105 @@
 
 </head>
 <body>
-    <div class="body">
+    <div class="container">
         <header>
-        <div class="infoline">
-                <!-- <img src="img/Etsy_logo_lg_rgb.png>"> -->
-            <form>
-                <label class=logoet><img src="img/Etsy_logo_lg_rgb.png"></label>
-                <input type="text" name="search" id="search" placeholder="Search for items or shops" class="searchtext">
-                <input type="submit" value="Search" class="searchbutton">
-                
-            </form>
-            <ul class="userline">
-                <li>Sell on Etsy</li>
-                <li>Register</li>
-                <li>Sign in</li>
-                <li class="icons"><i class="fa fa-suitcase" aria-hidden="true"><p>Discover</p></i></li>
-                <li class="icons"><i class="fa fa-shopping-cart" aria-hidden="true"> <p>Cart</p></i></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="categories">
-                <li>Jewelry & Accessories</li>
-                <li>Clothing & Shoes</li>
-                <li>Home & Living</li>
-                <li>Wedding & Party</li>
-                <li>Toys & Entertainment</li>
-                <li>Art & Collectibles</li>
-                <li>Craft Supplies</li>
-                <li>Vintage</li>                
-                <li>Gifts</li>
-            </ul>
-<hr>
-        </div>
-            <ul class="variety">
-                <li>whiskey decanter</li>
-                <li>whiskey stones</li>
-                <li>whiskey glasses</li>
-                <li>whiskey barrel</li>
-                <li>bourbon</li>
-                <li>scotch</li>
-                <li>whiskey gift</li>
-                <li>whiskey sign</li>
-                <li>whiskey svg</li>
-                <li>beer</li>
-            </ul>
-        <div>
+            <div class="infoline">
+                    <!-- <img src="img/Etsy_logo_lg_rgb.png>"> -->
+                <form>
+                    <label class=logoet><img src="img/Etsy_logo_lg_rgb.png"></label>
+                    <input type="text" name="search" id="search" placeholder="Search for items or shops" class="searchtext">
+                    <input type="submit" value="Search" class="searchbutton">
+                    
+                </form>
+                <ul class="userline">
+                    <li>Sell on Etsy</li>
+                    <li>Register</li>
+                    <li>Sign in</li>
+                    <li class="icons"><i class="fa fa-suitcase" aria-hidden="true"><p>Discover</p></i></li>
+                    <li class="icons"><i class="fa fa-shopping-cart" aria-hidden="true"> <p>Cart</p></i></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="categories">
+                    <li>Jewelry & Accessories</li>
+                    <li>Clothing & Shoes</li>
+                    <li>Home & Living</li>
+                    <li>Wedding & Party</li>
+                    <li>Toys & Entertainment</li>
+                    <li>Art & Collectibles</li>
+                    <li>Craft Supplies</li>
+                    <li>Vintage</li>                
+                    <li>Gifts</li>
+                </ul>
+                    <hr>
+            </div>
+                <ul class="variety">
+                    <li>whiskey decanter</li>
+                    <li>whiskey stones</li>
+                    <li>whiskey glasses</li>
+                    <li>whiskey barrel</li>
+                    <li>bourbon</li>
+                    <li>scotch</li>
+                    <li>whiskey gift</li>
+                    <li>whiskey sign</li>
+                    <li>whiskey svg</li>
+                    <li>beer</li>
+                </ul>
+            <div>
 
-        </div>
+            </div>
         </header>
-        <aside>
+        <section class="body"> 
+            <aside>
+                <ul>
+                    <li class="cat">All Categories</li>
+                        <ul>
+                            <li>Home & living</li>
+                            <li>Art & Collectibles</li>
+                            <li>Weddings</li>
+                            <li>Clothing</li>
+                            <li class="showmore">Show more</li>
+                        </ul>
+                    <li class="checkbox">Special offers</li>
+                    <li class="checkbox">Ready to ship in</li>
+                    <li class="checkbox">Material</li>
+                    <li class="checkbox">Color</li>
+                    <li class="checkbox">Can be personalized</li>
+                    <li class="checkbox">Occasion</li>
+                    <li class="checkbox">Holiday</li>
 
-        </aside>
-        <section>
+                    <li class="optionbutton">Shop location</li>
+                    <li class="optionbutton">Item type</li>
+                    <li class="optionbutton">Price ($)</li>
+                    <li class="checkbox">Ordering options</li>
+                    <li>Ship to</li>
+
+
+                </ul>
+<div class="mm">
+    
+</div>
+
+            </aside>          
+                <main id="products">
+                    <!-- <div class="product">
+                    <a class="productlink" href="${item.url}">
+                    <img src="${item.Images[0].url_170x135}">
+        </a
             
-            <main>
+        <div class="desc">
+            <p>${item.title}</p>
+            <p class="seller">${item.Shop.shop_name} </p>
+            <p class="stars">rating:</p>
+            <p class="price">$${item.price}</p>
+                
+        </div>
+                            </div> -->
 
-            </main>
+                </main>
         </section>
     </div>
-
+    <script src="items.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
