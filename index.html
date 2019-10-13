@@ -14,7 +14,7 @@
         <header>
             <div class="infoline">
                     <!-- <img src="img/Etsy_logo_lg_rgb.png>"> -->
-                <form>
+                <form class="hform">
                     <label class=logoet><img src="img/Etsy_logo_lg_rgb.png"></label>
                     <input type="text" name="search" id="search" placeholder="Search for items or shops" class="searchtext">
                     <input type="submit" value="Search" class="searchbutton">
@@ -60,34 +60,96 @@
         </header>
         <section class="body"> 
             <aside>
-                <ul>
-                    <li class="cat">All Categories</li>
-                        <ul>
-                            <li>Home & living</li>
+                <form>
+                    <p>All categories</p>
+                        
+                        <ul class="cat">
+                            <li >Home & living</li>
                             <li>Art & Collectibles</li>
                             <li>Weddings</li>
                             <li>Clothing</li>
-                            <li class="showmore">Show more</li>
+                            <li class="showmore">Show more</li></li>
                         </ul>
-                    <li class="checkbox">Special offers</li>
-                    <li class="checkbox">Ready to ship in</li>
-                    <li class="checkbox">Material</li>
-                    <li class="checkbox">Color</li>
-                    <li class="checkbox">Can be personalized</li>
-                    <li class="checkbox">Occasion</li>
-                    <li class="checkbox">Holiday</li>
+                    <fieldset>
+                        <p>Special Offers</p>
+                        <label class="lblcontainer">FREE shipping
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="lblcontainer">On sale
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                    </fieldset>
+                    <fieldset>
+                            <p>Ready to ship in</p>
+                            <label class="lblcontainer">1 business day
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="lblcontainer">1 – 3 business days
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                        </fieldset>
+                        <fieldset>
+                                <p>Material</p>
+                                <label class="lblcontainer">Ceramic
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="lblcontainer">Cork
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="lblcontainer">Ceramic
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                 <label class="lblcontainer">Cork
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p> show more</p>
+                        </fieldset>
+                        <fieldset>
+                            <p>Can be personalized</p>
+                            <label class="lblcontainer">Yes
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="lblcontainer">No
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                                <p>Occasion</p>
+                                <label class="lblcontainer">Anniversary
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="lblcontainer">Baby shower
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="lblcontainer">Bachelor party
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                    <label class="lblcontainer">Bachelorette party
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                </label>
+                                    <label class="lblcontainer">Baptism
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p> show more</p>
+                        </fieldset>
 
-                    <li class="optionbutton">Shop location</li>
-                    <li class="optionbutton">Item type</li>
-                    <li class="optionbutton">Price ($)</li>
-                    <li class="checkbox">Ordering options</li>
-                    <li>Ship to</li>
-
-
-                </ul>
-<div class="mm">
-    
-</div>
+                </form>
 
             </aside>          
                 <main id="products">

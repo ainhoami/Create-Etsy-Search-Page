@@ -14,6 +14,7 @@ html{
     margin: auto;
 }
 .body{
+    
     display: grid;
    
     grid-template-columns: 1fr 4fr;
@@ -28,9 +29,7 @@ header{
     height: auto;
 
 }
-/* aside{
-    background-color: aqua;
-} */
+
 section{
     margin: 20px 0;
 }
@@ -42,7 +41,7 @@ main{
 }
 
 
-.infoline, form, .userline, .categories, .variety{
+.infoline, .hform, .userline, .categories, .variety{
     display:flex;
     
 
@@ -52,25 +51,25 @@ main{
     align-items: center;
 }
 
-form{
+.hform{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-input{
+form.hform input{
     height: 40px;
 }
-input.searchtext{
+form.hform input.searchtext{
 width:260px;
 }
 
-input.searchtext::placeholder{
+form.hform input.searchtext::placeholder{
     color: grey;
     font-size: 16px;
     text-align: center;
 }
 
-input.searchbutton{
+form.hform input.searchbutton{
     width:100px;
     background-color: black;
     color:white;
@@ -184,7 +183,92 @@ a.productlink{
 }
 
 
-/* .desc {
-    display: flex;
-    justify-content: space-between;
-} */
+
+aside form{
+    border: 1px solid red;
+    font-size: 15px;
+}
+
+aside form p{
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.cat{
+    list-style: none;
+    padding:0 0 10px 20px;
+    margin: 0;
+    
+}
+
+.cat li{
+    padding: 5px 20px;
+}
+
+ fieldset{
+    border:none;
+    position:relative;
+}
+
+.lblcontainer {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 3px;
+    margin-bottom: 12px;
+    
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .lblcontainer input {
+    position: absolute;
+    opacity: 0;
+   
+    height: 0;
+    width: 0;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #fff;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border:1px solid #666;
+    border-radius:4px;   
+  }
+
+  .lblcontainer input:checked ~ .checkmark {
+    background-color: black;
+  }
+
+  .checkmark:after { 
+    content: "";
+    position: absolute;
+    display: none;
+  } 
+
+  .lblcontainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .lblcontainer .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 7px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
