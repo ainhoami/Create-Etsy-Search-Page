@@ -10,10 +10,12 @@ html{
 }
 a {
     text-decoration: none;
+   
 }
 
-a:visited{
+a label:hover, a:hover, a:visited, a:hover:visited{
     color:#444;
+    cursor: pointer;
 }
 
 .container{
@@ -173,10 +175,35 @@ border-left: 1px solid #eee;
     
 }
 
+p.showmore{
+    padding: 10px;
+    
+    
+    width:120px;
+    height:40px;
+    text-align: center;
+    
+    
+}
 
-/* .categories li:hover{
-    border-bottom:1px solid black;
-} */
+p.showmore:hover{
+    background-color: #eee;
+    border-radius: 25px;
+}
+
+.showmore i{
+   
+    color:#444;
+    font-weight: bold;
+   
+}
+
+i.fa span{
+
+    font-family: sans-serif;
+}
+
+
 
 hr{
     background-color:#ccc;
@@ -199,7 +226,7 @@ align-items: center;
     
 }
 
-.variety li a{
+.variety li a, .variety li a:hover{
     color:black;
 }
 
@@ -247,6 +274,7 @@ a.productlink{
 
 aside form{
    font-size: 15px;
+  
 }
 
 aside form p{
@@ -258,7 +286,7 @@ aside form p{
 
 .cat{
     list-style: none;
-    padding:0 0 10px 20px;
+    padding:0 0 0 10px;
     margin: 0;
     
 }
@@ -267,9 +295,16 @@ aside form p{
     padding: 5px 20px;
 }
 
+ul.cat li a:hover, .cat li a:hover:visited, .cat li a:visited{
+    text-decoration: underline;
+    color:#444;
+}
+
  fieldset{
     border:none;
     position:relative;
+    padding: 0;   
+    margin: 10px 0;
 }
 
 .lblcontainer {
@@ -294,11 +329,11 @@ aside form p{
     width: 0;
   }
 
-  .container:hover input ~ .checkmark {
+  .lblcontainer:hover input ~ .checkmark {
     background-color: #fff;
   }
 
-  .checkmark {
+  .checkmark, .selectedmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -309,11 +344,15 @@ aside form p{
     border-radius:4px;   
   }
 
-  .lblcontainer input:checked ~ .checkmark {
+  .selectedmark {
+    border-radius: 50%;
+  }
+
+  .lblcontainer input:checked ~ .checkmark, .lblcontainer input:checked ~ .selectedmark{
     background-color: black;
   }
 
-  .checkmark:after { 
+  .checkmark:after, .selectedmark:after { 
     content: "";
     position: absolute;
     display: none;
@@ -333,6 +372,23 @@ aside form p{
     transform: rotate(45deg);
   }
 
+  .lblcontainer input:checked ~ .selectedmark:after {
+    display: block;
+  }
+  
+  .lblcontainer .selectedmark:after {
+    top: 5px;
+   left: 5px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
+
+
+
+
   fieldset a{
       text-decoration: none;
       color:#444;
@@ -341,3 +397,68 @@ aside form p{
   fieldset a:hover{
       text-decoration: underline;
   }
+
+  input.customlocation, input.customprice{
+      width:130px;
+      height: 35px;
+      margin-left: 30px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+     
+  }
+  input.customprice{
+    width:60px;
+   
+         
+}
+
+fieldset input.ctpricehigh{
+    margin:0;
+    margin-bottom: 10px;
+   
+}
+
+  input.customlocation::placeholder, input.customprice::placeholder{
+    color: grey;
+    font-size: 14px;
+    padding-left: 8px;
+   
+}
+
+
+.button {
+    position: absolute;
+    background-color: transparent;;
+    border:none;
+    color: #222;
+   margin-left: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+   
+    cursor: pointer;
+    height: 40px;
+    width:40px;
+  }
+
+  .button:hover{
+    background-color:#eee;;
+    border-radius: 50%;
+   
+  }
+
+  .dropdwn{
+    
+    background-color: white;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    width:205px;
+    margin:10px 0px 0 px0px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+    
+}
