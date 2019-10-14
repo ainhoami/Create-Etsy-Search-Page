@@ -77,6 +77,12 @@ form.hform input.searchtext::placeholder{
     text-align: center;
 }
 
+input.searchtext:focus{
+    border:1px solid black;
+       
+
+}
+
 form.hform input.searchbutton{
     width:100px;
     background-color:black;
@@ -239,8 +245,14 @@ align-items: center;
 .desc{
     display:grid;
     margin:6px 0;
+    color:#444;
     
 }
+.product a:hover, .product a:visited{
+    color:#444;
+    text-decoration: none;
+}
+
 .product img{
     width: 100%;
     
@@ -411,6 +423,14 @@ ul.cat li a:hover, .cat li a:hover:visited, .cat li a:visited{
    
          
 }
+input.customlocation:focus{
+    border:1px solid black;
+    
+}
+input.customprice:focus{
+    border:1px solid black;
+    
+}
 
 fieldset input.ctpricehigh{
     margin:0;
@@ -460,5 +480,49 @@ fieldset input.ctpricehigh{
     font-weight: 500;
     text-transform: capitalize;
     
+    
+}
+.heart{
+    position:relative;
+}
+.heart img{
+    position:absolute;
+    display: none;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    width:25px;
+    height: 25px;
+    top:10px;
+    left:200px;
+}
+
+a:hover .heart img{
+display: block;
+}
+
+.starsimg{
+    width:80px;
+    height:20px;
+}
+
+#rating{
+    width:80px;
+    height:20px;
+    background:url(img/ratingstars.png);
+}
+
+.rate{
+    width:80px;
+    height:20px;
+    background:url(img/ratingstars.png);
+    background-position: 0px -20px;
+    display: block;
+    
+}
+
+div.desc p.elegible{
+    font-size: 12px;
     
 }
