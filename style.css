@@ -136,11 +136,11 @@ width: 130px;
 
 .userline li:hover{
 text-decoration: underline;
-color:#777;
+color:white;
 }
 
 .userline li:nth-child(3) a:visited{
-    color:#444;
+    color:black;
 }
 
 .userline li:nth-child(3):hover,.userline li:nth-child(3):hover a:visited
@@ -253,8 +253,12 @@ align-items: center;
     text-decoration: none;
 }
 
+.product{
+    width:233px;
+}
+
 .product img{
-    width: 100%;
+    width: 233px;
     
 }
 
@@ -399,8 +403,13 @@ ul.cat li a:hover, .cat li a:hover:visited, .cat li a:visited{
 
 
 
+a {
+    color: #444;
+}
 
-
+li.sign a:hover, li.sign:hover{
+    color: white;
+}
   fieldset a{
       text-decoration: none;
       color:#444;
